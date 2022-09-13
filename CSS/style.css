@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Stardos Stencil', cursive;
+    
+
+}
+
+
+html {
+  scroll-behavior: smooth;
+  
+}
+nav{
+    width: 100%;
+   position: fixed
+   ;
+
+   z-index: 3;
+   background-color: white;
+  margin-top: -10vh;
+    display: flex;
+justify-content: space-between;
+color: rgb(0, 0, 0);
+text-align: center;
+
+
+}
+h2.double:before { 
+  /* this is just to undo the :before styling from above */
+  border-top: none; 
+}
+h2.background {
+  position: relative;
+  z-index: 1;
+}
+h2.background:before {
+  /* border-top: 2px solid #dfdfdf; */
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+h2.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  /* background: #fff; */
+  padding: 0 15px;
+}
+h2.double:before {
+  /* this is just to undo the :before styling from above */
+  border-top: none;
+}
+h2.double:after {
+  border-bottom: 4px solid rgb(0, 0, 0);
+  -webkit-box-shadow: 0 1px 0 0 rgb(0, 0, 0);
+  -moz-box-shadow: 0 1px 0 0 rgb(0, 0, 0);
+  box-shadow: 0 1px 0 0 rgb(0, 0, 0);
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  width: 40%;
+  z-index: -1;
+}
+img{
+    height: 9vh;
+    width: 10vh;
+
+}
+#logo{
+    margin: 5px 0vh 0vh 10vh;
+    
+
+
+}
+
+nav p{
+    font-size: 4vh;
+    
+}
+ul li {
+    text-decoration: none;
+    display: inline;
+    font-size: 3vh;
+
+   
+
+}
+
+ul a{
+    text-decoration:none;
+    font-size: 3vh;
+float: left;
+color: black;
+margin: 4vh 3vh 3vh 4vh;
+
+}
+:link:hover { border-bottom: double red; }
+.container{
+    margin-top: 10vh;
+   height: 90vh;
+   width: 100%;
+   /* background-color: red; */
+   /* background: url("../IMG/fumaca.png");  */
+   background: linear-gradient(144deg,  #fff 55%, #000 -10%);
+   background-repeat: none;
+   background-size:cover ;
+   display: flex;
+ 
+   
+}
+
+h1{
+    font-size: 16vh;
+    color: rgb(0, 0, 0);
+    text-shadow: 10px 10px rgba(20, 20, 20, 0.123);
+    margin: 30vh 0vh 0vh 30vh;
+    letter-spacing: 2px;
+    letter-spacing: 10px;
+}
+.horario{
+
+    height: 20vh;
+    background-color: #000000;
+    margin-top: 50vh;
+    float: left;
+    border:double 15px white ;
+    flex-grow: 2;
+    border-radius: 20px;
+    margin-left: -100vh;
+
+}
+h2{
+
+  
+text-align: center;
+
+color: rgb(0, 0, 0);
+display: block;
+/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+text-shadow: none;
+margin: 5vh;
+text-transform: uppercase;
+letter-spacing: 5px;
+z-index: 0;
+border-bottom:2px solid white ;
+font-size: 10vh;
+height: 10vh;
+text-align: center;
+}
+
+ #tower{
+    width: 65vh;
+    height: 90vh;  
+
+
+} 
+
+.historia{
+    height: 101vh;
+
+    width: 100%;
+  
+    display: flex;
+
+    /* border: 1px solid rgba(255, 255, 255, 0.13); */
+     background: linear-gradient(-82deg,  #fff 59%, #000 10%);
+    
+
+}
+#shelby{
+
+    height: 99vh;
+    width: 60vh;
+    /* background-color: red; */
+    float: left;
+    margin-top: 1vh;
+   
+}
+#historia-cointainer{
+   height: 60vh;
+   margin: 24vh 10vh 26vh 10vh;
+display: flex;
+text-align: center;
+background-color: black;
+width: 140vh;
+  align-items: center;
+
+   border: none;
+   display: flex;
+   /* box-shadow: 1px 2px 20px 2px rgb(0, 0, 0); */
+padding: 10vh;
+border:double 15px white ;
+
+}
+#timer{
+  color: white;
+  margin-top: 2vh;
+  border: none;
+  text-shadow: 5px 10px rgba(255, 250, 250, 0.13);
+}
+#historia-cointainer p{
+
+    color: #fff;
+    font-size: 4vh;
+width: 100%;
+    font-family: fantasy;
+    height: 30vh;
+    letter-spacing: 3px;
+
+      font-weight: normal;
+    box-sizing: border-box;
+    margin-left: 4vh;
+}
+.valores{
+    height: 100vh;
+    width: 100%;    
+     background: linear-gradient(-0deg,  #fff 54%, #000 30%);
+    display: flex;
+    align-items: center;
+}
+#valores{
+    color: black;
+}
+.vars{
+    height: 70vh;
+border-radius: 5;
+box-shadow: 0 5px 30px 10px rgba(black, 0.3);
+    width: 50vh;
+    margin: 20vh auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-end;
+    /* border-radius:12px ; */
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    
+}
+.preco{
+    width: 100%;
+    z-index: 2;
+    height: 35vh;
+    background-color: rgb(0, 0, 0);
+     border-top-right-radius: 10vh;
+     border: double 8px rgb(255, 255, 255);
+     border-top-left-radius: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+justify-content: flex-start;
+
+}
+  .preco:hover{
+
+
+   
+        opacity: 0.9;
+   
+} 
+.precosimg{
+    margin: -35vh 5vh 0vh 14vh;
+  height: 32vh;
+    width: 20vh;  
+
+z-index: 1;
+    position: absolute;
+}
+#finn{
+    height: 36vh;
+    width: 35vh;
+    margin: -34vh 44vh 0vh 2vh;
+}
+#alfie{
+    height: 41vh;
+    width: 32vh;
+    margin: -28vh 44vh 0vh 7vh;
+}
+.h3-price{
+    font-size: 5vh;
+    color: white;
+position: absolute;
+    text-transform: uppercase;
+    margin: 6vh 6vh 6vh 7vh;
+}
+#crianca{
+    margin-left: 11vh;
+}
+#adulto{
+    margin-left: 14vh;
+}
+.price{
+    font-size: 5vh;
+    color: white;
+position: absolute;
+justify-content: center;
+align-items: center;
+    text-transform: uppercase;
+    margin: 17vh 6vh 6vh 16vh;
+}
+.curiosidades{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+justify-content: space-around;
+background: linear-gradient(-90deg,  #fff 49%, #000 30%);
+    align-items: center;
+    flex-wrap: wrap;
+}
+.curiosidade{
+    width: 60vh;
+    height: 40vh;
+    margin: 90px 90px 0px 90px ;
+border: 3px solid white;
+text-align: center;
+color: white;
+padding:14vh;
+box-sizing: border-box;
+border-radius: 20px;
+font-size: 3vh;
+background-color: black;
+
+}
+#curiosidade{
+    color: black;
+}
+#div-1{
+    flex-grow: 1;
+}
+#div-2{
+    flex-grow: 1;
+}
+#div-3{
+    flex-grow: 1;
+}
+#div-4{
+    flex-grow: 1;
+}
+.curiosidade:hover{
+    background-color: white;
+    color: #000;
+    border: 3px solid black;
+
+ 
+   
+    transition: 1s ease;
+
+font-weight: 900;
+
+  
+}
+.gallery {
+    position: absolute;
+    top: 540vh;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 120vh;
+
+    max-height: 28vw;
+    overflow: hidden;
+  }
+  
+  .gallery:before,
+  .gallery:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 3;
+  }
+  
+  .gallery:before {
+    left: 0;
+   
+  }
+  
+  .gallery:after {
+    right: 0;
+    /* background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); */
+  }
+  
+  .gallery__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gallery__item {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    box-shadow: 8px 15px 30px 2px black;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+  }
+  
+  .gallery__item:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(2) {
+    left: 0;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .gallery__item:nth-child(4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(n+5) {
+    left: 100%;
+    z-index: 1;
+    transform: scale(.8);
+  }
+  
+  /* Controllers */
+  
+  .gallery__prev,
+  .gallery__next {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%) scale(.8);
+    cursor: pointer;
+    /* background-image: url(data:image/png;base64,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); */
+  }
+  
+   .gallery__prev {
+    left: 10%;
+    height: 100px;
+
+ 
+   
+   
+width: 10vh;
+    
+box-shadow: 12px 13px 20px 2px rgb(0, 0, 0); 
+   background-position: 70px center;
+
+  }
+  .fa-arrow-rigth{
+    font-size: 50vh;
+  }
+ .fa-arrow-left{
+  font-size: 11vh;
+
+  color: rgba(0, 0, 0, 0.774);
+
+ } 
+  .gallery__next {
+    left: 90%;
+    height: 120px;
+    width: 100px;
+    color: white;
+    background-image: url(../IMG/arrowRigth.png);
+    background-repeat: none;
+    background-size: cover;
+    box-shadow: 1px 2px 20px 2px rgb(0, 0, 0); 
+    background-position: 100px center;
+
+  }
+
+  /* Backgrounds */
+  
+  .bg-1 {
+    background-image: url(https://www.falandodeviagem.com.br/imagens3/BigBen33.jpg);
+  }
+  
+  .bg-2 {
+    background-image: url(https://jornadakamoi.files.wordpress.com/2014/10/fb3.jpg);
+  }
+  
+  .bg-3 {
+    background-image: url(https://blog.rockfeller.com.br/wp-content/uploads/2019/04/londres-1.jpg);
+  }
+  
+  .bg-4 {
+    background-image: url(https://viajanteinveterado.com.br/wp-content/uploads/2017/08/DSC06722-1280x960-1024x768.jpg);
+  }
+  
+  .bg-5 {
+    background-image: url(https://i0.wp.com/www.eurodicas.com.br/wp-content/uploads/2022/06/qualidade-de-vida-na-inglaterra.jpg?fit=750%2C500&ssl=1);
+  }
+  
+  .bg-6 {
+    background-image: url(https://experienciajoven.com/wp-content/uploads/2021/01/vivir-en-inglaterra.jpg);
+  }
+  
+  .bg-7 {
+    background-image: url(https://www.tecidiomas.es/uploads/noticias/3321/imagenes/mejores-destinos-vivir-estudiar-inglaterra.jpg);
+  }
+  #ft{
+    color: black;
+    margin-top: 10vh;
+  }
+.extra{
+  margin-top: 80vh;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://projectrevolver.org/wp-content/uploads/2018/08/wp1890593.jpg);
+  background-size: cover;
+  -webkit-backdrop-filter: blur(1900px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+
+}
+.extra h2{
+  color: rgb(255, 255, 255);
+  border-bottom: none;
+}
+#sobre{
+  padding: 11vh;
+  box-sizing: border-box;
+  height: 50vh;
+  border: 12px double rgb(255, 255, 255); 
+  width: 80vh;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  margin:30vh auto;
+  /* border-radius: 30px; */
+  color: rgb(255, 255, 255)
+}
+#sobre p{
+  font-size: 3vh;
+  text-align: center;
+}
+.extra h2.double:after {
+  border-bottom: 4px solid #fff;
+  -webkit-box-shadow: 0 1px 0 0 #fff;
+  -moz-box-shadow: 0 1px 0 0 #fff;
+  box-shadow: 0 1px 0 0 #fff;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  width: 40%;
+  z-index: -1;
+}
+footer{
+  background-color: black;
+  text-align: center;
+ color: #fff;
+ font-size: 5vh;
+justify-content: end;
+height: 10vh;
+ letter-spacing: 5px;
+}
